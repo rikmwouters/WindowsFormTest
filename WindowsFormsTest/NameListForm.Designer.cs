@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsTest
 {
-    partial class Form1
+    partial class NameListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.NameList = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // NameList
+            // 
+            this.NameList.FormattingEnabled = true;
+            this.NameList.Location = new System.Drawing.Point(74, 46);
+            this.NameList.Name = "NameList";
+            this.NameList.Size = new System.Drawing.Size(188, 472);
+            this.NameList.TabIndex = 0;
+            // 
+            // NameListForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(343, 591);
+            this.Controls.Add(this.NameList);
+            this.Name = "NameListForm";
+            this.Text = "NamesListForm";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox NameList;
     }
 }
-
